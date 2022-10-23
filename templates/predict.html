@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+      }
+      form h2{
+        color:#FF0000;
+      }
+      @media (max-width: 800px) {
+        form {
+          flex-direction: column;
+          align-items: stretch;
+        }
+      }
+      .form-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        padding-bottom: 60px;
+        background: #eee;
+      }
+
+      .form-container form {
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        text-align: center;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1 style="text-decoration: underline;">Student Performance In Exams</h1>
+        <br />
+        <h2 style="color:black">Out Of 300 Marks The Student Can Get:</h2><br />
+        <h2>{{data}}<h2><br />
+        <a href="/" class="button">Go Back To Home Page</a>
+      </form>
+    </div>
+  </body>
+</html>
